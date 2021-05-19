@@ -1,1 +1,164 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.header {
+  padding: 2rem 3rem;
+}
+
+.header .logo {
+  height: auto;
+  width: 5rem;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.info {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 0 3rem;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+.heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #ce9797;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.heading span {
+  font-weight: 600;
+  color: #413a3a;
+}
+
+.text {
+  color: #ce9797;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.form {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.email {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  height: auto;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 8px 20px -5px #413a3a;
+          box-shadow: 0px 8px 20px -5px #413a3a;
+}
+
+.email:focus {
+  outline: transparent;
+  border-color: #f96262;
+}
+
+.form .warning {
+  visibility: visible;
+  color: #f96262;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.form p {
+  visibility: hidden;
+}
+
+.error {
+  position: absolute;
+  top: 17.5%;
+  right: 5rem;
+}
+
+::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+::placeholder {
+  color: #ce9797;
+}
+
+@media screen and (min-width: 43.75em) {
+  .hero-mobile {
+    display: none;
+  }
+  .hero-desktop {
+    display: block;
+  }
+  .header .logo {
+    width: 10rem;
+  }
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .warning {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
