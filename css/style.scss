@@ -81,6 +81,11 @@ $darkGrayishRed: hsl(0, 6%, 24%);
   border-radius: 30px;
   border: 1px solid transparent;
   box-shadow: 0px 8px 20px -5px $darkGrayishRed;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+  }
 }
 .email:focus {
   outline: transparent;
@@ -89,11 +94,16 @@ $darkGrayishRed: hsl(0, 6%, 24%);
 .form .warning {
   visibility: visible;
   color: $softRed;
-  margin-top: 0.5rem;
-  font-size: 0.7rem;
+}
+.form .success {
+  visibility: visible;
+  color: hsl(120, 63%, 59%);
 }
 .form p {
   visibility: hidden;
+  margin-top: 0.5rem;
+  padding-left: 3rem;
+  font-size: 0.7rem;
 }
 .error {
   visibility: hidden;
@@ -139,9 +149,23 @@ $darkGrayishRed: hsl(0, 6%, 24%);
     grid-area: form;
     background: none;
     margin-left: 5rem;
+    width: 50%;
+    .form {
+      .warning,
+      .success {
+        font-size: 1rem;
+      }
+    }
+  }
+  .heading {
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: 1.2rem;
+    font-size: 4rem;
   }
   .text {
     font-size: 1rem;
+    text-align: left;
   }
   .warning {
     font-size: 1rem;
